@@ -2,7 +2,7 @@
 
 return [
     'db_name' => 'php-auth-demo',
-    'db_host' => '127.0.0.1',
+    'db_host' => 'localhost',
     'db_user' => 'root',
     'db_pass' => '',
 ];

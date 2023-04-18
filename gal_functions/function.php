@@ -161,7 +161,7 @@ function excess($files)
 // Подключение к БД
 function connect()
 {
-    $link = mysqli_connect('127.0.0.1', 'root', '', 'php-auth-demo'); // Открывает новое соединение с сервером MySQL и базой данных .
+    $link = mysqli_connect('localhost', 'root', '', 'php-auth-demo'); // Открывает новое соединение с сервером MySQL и базой данных .
     if (!$link)
     {
         die('Ошибка подключения (' . mysqli_connect_errno() . ') '
