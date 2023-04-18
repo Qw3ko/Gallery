@@ -7,7 +7,7 @@ $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `username` = :username");
 $stmt->execute(['username' => $_POST['username']]);
 if (!$stmt->rowCount()) {
     flash('Пользователь с такими данными не зарегистрирован');
-    header('Location: login.php');
+    header('Location: ../login.php');
     die;
 }
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
